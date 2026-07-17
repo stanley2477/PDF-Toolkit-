@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PDF Toolkit Pro - Free PDF & Image Tools Online</title>
+    <meta name="description" content="Convert, compress, merge, split, and edit your PDFs and images for free with PDF Toolkit Pro. 100% secure processing, no registration, and no hidden file limits.">
+    
+    <style>
+        /* Base Styling */
+        body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background-color: #f8fafc; color: #334155; margin: 0; padding: 0; display: flex; flex-direction: column; min-height: 100vh; }
+        header { background: white; border-b: 1px solid #e2e8f0; padding: 15px; position: sticky; top: 0; z-index: 50; }
+        .nav-container { max-width: 1000px; margin: 0 auto; display: flex; justify-content: space-between; items-center; }
+        .logo { font-size: 22px; font-weight: 900; color: #2563eb; text-decoration: none; background: none; border: none; cursor: pointer; }
+        
+        /* Layout Structure */
+        main { max-width: 800px; margin: 0 auto; padding: 40px 20px; flex-grow: 1; width: 100%; box-sizing: border-box; }
+        .page-section { display: none; }
+        .page-section.active { display: block; }
+        
+        /* Typography */
+        h1 { font-size: 32px; font-weight: 800; color: #0f172a; text-align: center; margin-bottom: 10px; }
+        .subtitle { font-size: 16px; color: #64748b; text-align: center; margin-bottom: 30px; }
+        
+        /* Upload Box */
+        .upload-box { background: white; border: 3px dashed #cbd5e1; border-radius: 16px; padding: 40px 20px; text-align: center; margin-bottom: 40px; }
+        .upload-btn { color: #2563eb; font-weight: bold; text-decoration: underline; }
+        
+        /* Grid Buttons */
+        h2 { font-size: 20px; font-weight: 700; color: #0f172a; margin-top: 35px; margin-bottom: 15px; border-bottom: 2px solid #e2e8f0; padding-bottom: 8px; }
+        .grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; margin-bottom: 30px; }
+        .tool-card { background: white; border: 1px solid #e2e8f0; border-radius: 12px; padding: 15px; font-weight: 600; text-align: left; cursor: pointer; display: flex; flex-direction: column; justify-content: space-between; height: 90px; font-size: 14px; color: #334155; box-shadow: 0 1px 3px rgba(0,0,0,0.05); transition: all 0.2s; }
+        .tool-card:hover { border-color: #2563eb; color: #2563eb; transform: translateY(-2px); }
+        
+        /* Info Cards */
+        .info-card { background: white; border: 1px solid #e2e8f0; border-radius: 16px; padding: 30px; margin-bottom: 40px; line-height: 1.6; }
+        .contact-box { background: #eff6ff; border: 1px solid #bfdbfe; border-radius: 12px; padding: 20px; text-align: center; margin: 20px 0; }
+        .email-link { font-size: 18px; font-weight: bold; color: #1d4ed8; text-decoration: underline; }
+        
+        /* Footer Layout */
+        footer { background: #0f172a; color: #94a3b8; padding: 40px 20px; text-align: center; margin-top: auto; }
+        .footer-links { display: flex; justify-content: center; gap: 20px; margin-top: 15px; flex-wrap: wrap; }
+        .footer-links button { background: none; border: none; color: #94a3b8; font-weight: 500; cursor: pointer; font-size: 14px; }
+        .footer-links button:hover { color: white; }
+    </style>
+</head>
+<body>
+
+    <!-- Header Navigation -->
+    <header>
+        <div class="nav-container">
+            <button onclick="showPage('home')" class="logo">🛠️ PDF Toolkit Pro</button>
+        </div>
+    </header>
+
+    <!-- HOME WORKSPACE -->
+    <main id="home" class="page-section active">
+        <h1>Convert, Compress & Edit PDFs and Images for Free</h1>
+        <p class="subtitle">Fast, secure, and entirely online. No registrations, no hidden limits.</p>
+
+        <!-- Drop Box Workspace -->
+        <div class="upload-box">
+            <div style="font-size: 40px; margin-bottom: 10px;">📥</div>
+            <p style="font-size: 18px; font-weight: bold; margin: 5px 0;"><span class="upload-btn">Select File</span> or Drag & Drop here</p>
+            <p style="font-size: 12px; color: #94a3b8; margin: 0;">Supports PDF, WORD, JPG, PNG, HEIC, and WebP</p>
+        </div>
+
+        <!-- 📄 PDF TOOLS SECTION -->
+        <h2>📄 PDF Tools</h2>
+        <div class="grid">
+            <button class="tool-card"><span>📄 ➔ 📝</span><span>PDF to Word</span></button>
+            <button class="tool-card"><span>📝 ➔ 📄</span><span>Word to PDF</span></button>
+            <button class="tool-card"><span>🔗</span><span>Merge PDF</span></button>
+            <button class="tool-card"><span>✂️</span><span>Split PDF</span></button>
+            <button class="tool-card"><span>🗜️</span><span>Compress PDF</span></button>
+            <button class="tool-card"><span>🖼️ ➔ 📄</span><span>JPG to PDF</span></button>
+            <button class="tool-card"><span>📄 ➔ 🖼️</span><span>PDF to JPG</span></button>
+            <button class="tool-card"><span>📄 ➔ 🖼️</span><span>PDF to PNG</span></button>
+            <button class="tool-card"><span>🖼️ ➔ 📄</span><span>PNG to PDF</span></button>
+            <button class="tool-card"><span>📸 ➔ 📄</span><span>Image to PDF</span></button>
+            <button class="tool-card"><span>🔒</span><span>Protect PDF</span></button>
+            <button class="tool-card"><span>🔓</span><span>Unlock PDF</span></button>
+            <button class="tool-card"><span>🔄</span><span>Rotate PDF</span></button>
+        </div>
+
+        <!-- 🖼️ IMAGE TOOLS SECTION -->
+        <h2>🖼️ Image Tools</h2>
+        <div class="grid">
+            <button class="tool-card"><span>🗜️</span><span>Image Compressor</span></button>
+            <button class="tool-card"><span>📐</span><span>Image Resizer</span></button>
+            <button class="tool-card"><span>PNG ➔ JPG</span><span>PNG to JPG</span></button>
+            <button class="tool-card"><span>JPG ➔ PNG</span><span>JPG to PNG</span></button>
+            <button class="tool-card"><span>HEIC ➔ JPG</span><span>HEIC to JPG</span></button>
+            <button class="tool-card"><span>WebP ➔ JPG</span><span>WebP to JPG</span></button>
+            <button class="tool-card"><span>JPG ➔ WebP</span><span>JPG to WebP</span></button>
+        </div>
+    </main>
+
+    <!-- ABOUT WINDOW -->
+    <main id="about" class="page-section">
+        <h1 style="text-align:left;">About PDF Toolkit Pro</h1>
+        <div class="info-card">
+            <p>Welcome to <strong>PDF Toolkit Pro</strong>, your absolute destination for rapid, web-accessible file conversions. Managing documents shouldn't require installing expensive corporate software or fighting through confusing configuration options.</p>
+            <p>We built this web platform to democratize productivity tools. Our toolkit features powerful image compression routines, PDF construction engines, and layout rotators built with speed in mind. Our workflows process assets instantly directly inside your session.</p>
+        </div>
+    </main>
+
+    <!-- PRIVACY WINDOW -->
+    <main id="privacy" class="page-section">
+        <h1 style="text-align:left;">Privacy Policy</h1>
+        <div class="info-card">
+            <p><strong>Data Preservation:</strong> Files you upload into our dashboard are handled inside your client browser memory. We do not extract, review, sell, or archive your private file details. Everything is processed safely right on your device.</p>
+        </div>
+    </main>
+
+    <!-- TERMS WINDOW -->
+    <main id="terms" class="page-section">
+        <h1 style="text-align:left;">Terms of Service</h1>
+        <div class="info-card">
+            <p>By entering or using our online operational utilities, you explicitly validate that you understand and agree to comply with our systemic service policies and acceptable web usage rules.</p>
+        </div>
+    </main>
+
+    <!-- CONTACT WINDOW -->
+    <main id="contact" class="page-section">
+        <h1>Contact Us</h1>
+        <div class="info-card" style="text-align:center;">
+            <p>Have a question, feedback, or custom tool recommendation? Reach out directly via email.</p>
+            <div class="contact-box">
+                <p style="font-size: 12px; color: #2563eb; font-weight: bold; text-transform: uppercase; margin: 0;">Direct Support Email</p>
+                <a href="mailto:tookkitpropdf@gmail.com" class="email-link">tookkitpropdf@gmail.com</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer Menu -->
+    <footer>
+        <p style="font-weight: bold; color: white; margin: 0 0 5px 0;">PDF Toolkit Pro</p>
+        <p style="font-size: 12px; margin: 0;">Copyright © 2026 PDF Toolkit Pro. All rights reserved.</p>
+        <div class="footer-links">
+            <button onclick="showPage('about')">About</button>
+            <button onclick="showPage('privacy')">Privacy Policy</button>
+            <button onclick="showPage('terms')">Terms</button>
+            <button onclick="showPage('contact')">Contact</button>
+        </div>
+    </footer>
+
+    <!-- Tab Switching Logic -->
+    <script>
+        function showPage(pageId) {
+            document.querySelectorAll('.page-section').forEach(section => {
+                section.classList.remove('active');
+            });
+            document.getElementById(pageId).classList.add('active');
+            window.scrollTo({ top: 0, behavior: 'instant' });
+        }
+    </script>
+</body>
+</html>
